@@ -5,6 +5,8 @@
 
 # Project Goal
 
+![ragnarokmobile](/images/ragnarokmobile.png)
+
 The goal of this project is to develop a multi-class classification model that can correctly predict the rating of a review based off of the content of the review. In doing so, developers could possibly use such a model when proactively asking users for feedback in-game in order to gauge how their game is doing without taking a possible hit to their ratings, should users leave negative feedback in the app store. After reviews are classified, they may be analyzed more specifically to address problem areas or to focus on development or further development of desireable features.
 
 I have chosen this specific game, Ragnarok Mobile: Eternal Love, as it is a game that I have played since launch and have been playing to this day. As a result I have an idea of what I want to be looking for, and in a sense have an answer key as to what results I should generally be getting when doing exploratory data analysis.
@@ -60,6 +62,7 @@ Looking at the meta features of reviews in ROM Global and ROM SEA show that Rati
 
 When looking at the top 20 words/ngrams across ROM Global, there are not many well-defined features distinguishing these reviews from reviews of any other games. However, when looking at ROM SEA words/ngrams, there are several indications of jargon used specifically for that game such as woe/woc which is a game mode in the game. There are also several slang terms used such as calling Ragnarok Mobile: Eternal Love by the moniker of "Lagnarok Eternal Bug" or "Bugnarok Eternal Lag". Such jargon/slang is absent in the global top 20 words/ngrams and is most likely due to the lack of reviews. This is because these terms are also commonly referenced in the Global community as well, but perhaps is blanketed by more common phrases. Perhaps this is also an indication that Global players are less likely to put notable reviews than that of SEA players.
 
+![rating1](/images/rating1.png)
 
 # Modeling
 
