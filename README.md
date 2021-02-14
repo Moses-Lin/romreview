@@ -12,11 +12,12 @@ I have chosen this specific game, Ragnarok Mobile: Eternal Love, as it is a game
 In addition, it is suitable for a continuation fo my initial mobile games review project, as the game itself has multiple regions and different number of reviews per region. This gives me a view of what changes in modeling and EDA when certain factors are changed such as culture, playerbase size, and timing of updates.
 
 # Dataset
-Data was gathered from the Google Play store on [1/7/2020] at 10:26 PM EST for ROM Global, ROM SEA, and ROM EU
-Data was gathered from the Apple Store on [1/7/2020] at 10:26 PM EST for ROM Global
+Data was gathered from the Google Play store on [1/7/2020] at 10:26 PM EST for ROM Global, ROM SEA, and ROM EU.
 
-A Google Play Scraper (https://github.com/JoMingyu/google-play-scraper) was utilized.
-An Apple Store Scraper (https://github.com/cowboy-bebug/app-store-scraper) was utilized.
+Data was gathered from the Apple Store on [1/7/2020] at 10:26 PM EST for ROM Global.
+
+- A Google Play Scraper (https://github.com/JoMingyu/google-play-scraper) was utilized.
+- An Apple Store Scraper (https://github.com/cowboy-bebug/app-store-scraper) was utilized.
 
 A total of:
 - 6533 Reviews were obtained for ROM Global (Google Play)
