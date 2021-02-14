@@ -12,16 +12,22 @@ I have chosen this specific game, Ragnarok Mobile: Eternal Love, as it is a game
 In addition, it is suitable for a continuation fo my initial mobile games review project, as the game itself has multiple regions and different number of reviews per region. This gives me a view of what changes in modeling and EDA when certain factors are changed such as culture, playerbase size, and timing of updates.
 
 # Dataset
-Data was gathered from the Google Play store on [12/20/2020] at 4:35 PM EST for ROM Global, ROM SEA, and ROM EU
+Data was gathered from the Google Play store on [1/7/2020] at 10:26 PM EST for ROM Global, ROM SEA, and ROM EU
+Data was gathered from the Apple Store on [1/7/2020] at 10:26 PM EST for ROM Global
 
 A Google Play Scraper (https://github.com/JoMingyu/google-play-scraper) was utilized.
+An Apple Store Scraper (https://github.com/cowboy-bebug/app-store-scraper) was utilized.
 
 A total of:
-- 6470 Reviews were obtained for ROM Global
-- 72164 Reviews were obtained for ROM SEA
-- 573 Reviews were obtained for ROM EU
+- 6533 Reviews were obtained for ROM Global (Google Play)
+- 1318 Reviews were obtained for ROM Global (Apple Store)
+- 72231 Reviews were obtained for ROM SEA (Google Play)
+- 577 Reviews were obtained for ROM EU (Google Play)
 
-ROM EU had too few reviews to work with, so the files were not pickled for use later.
+ROM EU had too few reviews to work with, so the files were not pickled for use later. 
+
+The only reviews selected from the Apple store came from US, Canada, and Australia as these are the major English-speaking countries that play the Global Server.
+
 
 # Repository Contents
 
@@ -64,6 +70,18 @@ Four different models were fit to the dataset after TF-IDF Vectorization: Naive 
 - RF: 67.49% Accuracy, 58.38% F1 Score
 - SVT: 68.72% Accuracy, 61.93% F1 Score
 
+#### Global Models with Apple Store Reviews Added (1/7/2021 added)
+- Dummy Classifier: 29.50% Accuracy, 29.52% F1 Score
+- Naive Bayes: 66.73% Accuracy, 58.87% F1 Score
+- Decision Tree: 56.34% Accuracy, 54.59% F1 Score
+- Random Forest: 65.97% Accuracy, 57.34% F1 Score
+- Support Vector Machine: 68.62% Accuracy, 59.65% F1 Score
+
+#### GridSearch Global (with apple reviews)
+- DT: 58.58% Accuracy, 52.96% F1 Score
+- RF: 67.04% Accuracy, 57.93% F1 Score
+- SVT: 68.57% Accuracy, 61.60% F1 Score
+
 #### SEA Models:
 
 - Dummy Classifier: 36.67% Accuracy, 36.84% F1 Score
@@ -80,11 +98,17 @@ Four different models were fit to the dataset after TF-IDF Vectorization: Naive 
 
 # Findings
 
-### About the Model
+### About the Models
 
-The best model for ROM Global was Support Vector Machine with Gridsearch with 68.73% Accuracy, 61.93% F1 Score. The best model for ROM SEA was Support Vector Machine without Gridsearch with 77.24% Accuracy, 71.00% F1 Score. 
+The best model for ROM Global was Support Vector Machine with Gridsearch with 68.73% Accuracy, 61.93% F1 Score. The best model for ROM SEA was Support Vector Machine without Gridsearch with 77.24% Accuracy, 71.00% F1 Score.
+
+It seems that adding in reviews from the Apple store dropped the performance of the models by a bit, possibly suggesting some difference in how people review the games per platform.
 
 Unfortunately, I was unable to utilize Gridsearch for ROM SEA reviews for Random Forest and Support Vector Machine as they simply took too long to run, or would freeze up the kernel. However, with a more powerful computer, it is very possible to run such models with an increased review size.
+
+### Conclusion
+
+Perhaps for games with similar characteristics to ROM, it is possible to apply the classification model created here in order to determine a general "rating" for a specific period of time such as during major updates. In addition, we can determine that from those classifications, developers may sort such tickets in order of importance as it seems that ratings 1 or 5 yield very little beneficial information.
 
 
 ### Limitations:
