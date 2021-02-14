@@ -37,9 +37,25 @@ The only reviews selected from the Apple store came from US, Canada, and Austral
 
 # EDA
 
-Distribution of ratings across both ROM Global and ROM SEA are relatively the same, with the most reviews being 5 stars, and 2nd most reviews being in the 1 star category. 2 to 4 star ratings comprise the least of all ratings. Interestingly, 1 star ratings comprise of a greater percentage of reviews in ROM SEA. This is possibly indication that SEA culture is much more critical of games than their Global counterparts. However, it is known that SEA was considered a "guinea pig" for new updates in the past before they were applied in Global. This is indicative of how review spikes are much more prevalent in SEA than Global when major updates land. SEA was subject to much more game breaking bugs than Global upon release of major updates.
+![ratingdistribution](/images/ratingdistribution.png)
+
+Distribution of ratings across both ROM Global and ROM SEA are relatively the same, with the most reviews being 5 stars, and 2nd most reviews being in the 1 star category. 2 to 4 star ratings comprise the least of all ratings. Interestingly, 1 star ratings comprise of a greater percentage of reviews in ROM SEA. 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+![reviewsovertime](/images/reviewsovertime.png)
+
+This is possibly indication that SEA culture is much more critical of games than their Global counterparts. However, it is known that SEA was considered a "guinea pig" for new updates in the past before they were applied in Global. This is indicative of how review spikes are much more prevalent in SEA than Global when major updates land. SEA was subject to much more game breaking bugs than Global upon release of major updates.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+![metafeatures](/images/metafeatures.png)
 
 Looking at the meta features of reviews in ROM Global and ROM SEA show that Rating 2 reviews generally have the more substance to them, as they contain the most characters, punctuation, and capitalizations. Rating 5 on the other hand generally have very low count of most meta features, much lower than any other ratings by a long shot. The one exception would be mean number of words for both ROM Global and SEA reviews. This could be another indication that a majority of words used in Rating 5 are rather short, possibly indicating less thought being put into word choice.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+![top20commonwords](/images/top20commonwords.png)
 
 When looking at the top 20 words/ngrams across ROM Global, there are not many well-defined features distinguishing these reviews from reviews of any other games. However, when looking at ROM SEA words/ngrams, there are several indications of jargon used specifically for that game such as woe/woc which is a game mode in the game. There are also several slang terms used such as calling Ragnarok Mobile: Eternal Love by the moniker of "Lagnarok Eternal Bug" or "Bugnarok Eternal Lag". Such jargon/slang is absent in the global top 20 words/ngrams and is most likely due to the lack of reviews. This is because these terms are also commonly referenced in the Global community as well, but perhaps is blanketed by more common phrases. Perhaps this is also an indication that Global players are less likely to put notable reviews than that of SEA players.
 
